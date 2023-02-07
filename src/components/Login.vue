@@ -89,7 +89,7 @@ export default {
             }).then(data => {  //status===200时  ，返回的Promise对象为fufill状态执行resolve函数
                 this.register.isError = false
                 this.register.notice = " "
-                this.$router.push({ path: "notebooks" })  //路由跳到notebooks页面
+                this.$router.push({ path: "/notebooks" })  //路由跳到notebooks页面
 
             }).catch(data => {    //返回的Promise对象为reject状态执行reject函数
                 this.register.isError = true
@@ -119,7 +119,7 @@ export default {
             }).then(data => {
                 this.login.isError = false
                 this.login.notice = ''
-                this.$router.push({ path: "notebooks" })
+                this.$router.push({ path: "/notebooks" })
 
             }).catch(data => {
                 this.login.isError = true
